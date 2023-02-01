@@ -8,19 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CCC181E0298A4C050086426D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC181DF298A4C050086426D /* AppDelegate.swift */; };
-		CCC181E2298A4C050086426D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC181E1298A4C050086426D /* SceneDelegate.swift */; };
-		CCC181E4298A4C050086426D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC181E3298A4C050086426D /* ViewController.swift */; };
-		CCC181E7298A4C050086426D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC181E5298A4C050086426D /* Main.storyboard */; };
 		CCC181E9298A4C070086426D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC181E8298A4C070086426D /* Assets.xcassets */; };
 		CCC181EC298A4C070086426D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC181EA298A4C070086426D /* LaunchScreen.storyboard */; };
+		E7C0EF07BC85D603B6B2930D /* Pods_STExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F59CC2C80187B43A99B6BFB /* Pods_STExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F59CC2C80187B43A99B6BFB /* Pods_STExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDFFE2E38C2DFA810A8E4C6 /* Pods-STExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STExample.release.xcconfig"; path = "Target Support Files/Pods-STExample/Pods-STExample.release.xcconfig"; sourceTree = "<group>"; };
+		976FB34550391301C8343FE6 /* Pods-STExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STExample.debug.xcconfig"; path = "Target Support Files/Pods-STExample/Pods-STExample.debug.xcconfig"; sourceTree = "<group>"; };
 		CCC181DC298A4C050086426D /* STExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC181DF298A4C050086426D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCC181E1298A4C050086426D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCC181E3298A4C050086426D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCC181E6298A4C050086426D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC181E8298A4C070086426D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC181EB298A4C070086426D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC181ED298A4C070086426D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +29,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C0EF07BC85D603B6B2930D /* Pods_STExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		821DBDECA7E970F019EA922D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F59CC2C80187B43A99B6BFB /* Pods_STExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5ABA841947DCAEB54156A3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				976FB34550391301C8343FE6 /* Pods-STExample.debug.xcconfig */,
+				3BDFFE2E38C2DFA810A8E4C6 /* Pods-STExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CCC181D3298A4C050086426D = {
 			isa = PBXGroup;
 			children = (
 				CCC181DE298A4C050086426D /* STExample */,
 				CCC181DD298A4C050086426D /* Products */,
+				B5ABA841947DCAEB54156A3E /* Pods */,
+				821DBDECA7E970F019EA922D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				CCC181DF298A4C050086426D /* AppDelegate.swift */,
-				CCC181E1298A4C050086426D /* SceneDelegate.swift */,
-				CCC181E3298A4C050086426D /* ViewController.swift */,
-				CCC181E5298A4C050086426D /* Main.storyboard */,
 				CCC181E8298A4C070086426D /* Assets.xcassets */,
 				CCC181EA298A4C070086426D /* LaunchScreen.storyboard */,
 				CCC181ED298A4C070086426D /* Info.plist */,
@@ -74,9 +90,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCC181F0298A4C070086426D /* Build configuration list for PBXNativeTarget "STExample" */;
 			buildPhases = (
+				D04E2C92E449E81594614732 /* [CP] Check Pods Manifest.lock */,
 				CCC181D8298A4C050086426D /* Sources */,
 				CCC181D9298A4C050086426D /* Frameworks */,
 				CCC181DA298A4C050086426D /* Resources */,
+				A1DB6965F75E1D7FACB77417 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +145,65 @@
 			files = (
 				CCC181EC298A4C070086426D /* LaunchScreen.storyboard in Resources */,
 				CCC181E9298A4C070086426D /* Assets.xcassets in Resources */,
-				CCC181E7298A4C050086426D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1DB6965F75E1D7FACB77417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STExample/Pods-STExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STExample/Pods-STExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STExample/Pods-STExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D04E2C92E449E81594614732 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCC181D8298A4C050086426D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCC181E4298A4C050086426D /* ViewController.swift in Sources */,
 				CCC181E0298A4C050086426D /* AppDelegate.swift in Sources */,
-				CCC181E2298A4C050086426D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCC181E5298A4C050086426D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCC181E6298A4C050086426D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCC181EA298A4C070086426D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +331,7 @@
 		};
 		CCC181F1298A4C070086426D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976FB34550391301C8343FE6 /* Pods-STExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +345,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +361,7 @@
 		};
 		CCC181F2298A4C070086426D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDFFE2E38C2DFA810A8E4C6 /* Pods-STExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +375,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
