@@ -869,7 +869,7 @@ PODS:
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
-  - ShareTripSDK (from `https://github.com/sharetripnet/ShareTripSDK.git`, tag `1.0.1`)
+  - ShareTripSDK (= 1.0.1)
 
 SPEC REPOS:
   trunk:
@@ -921,20 +921,11 @@ SPEC REPOS:
     - PKHUD
     - pop
     - PromisesObjC
+    - ShareTripSDK
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftKeychainWrapper
     - SwiftyJSON
-
-EXTERNAL SOURCES:
-  ShareTripSDK:
-    :git: https://github.com/sharetripnet/ShareTripSDK.git
-    :tag: 1.0.1
-
-CHECKOUT OPTIONS:
-  ShareTripSDK:
-    :git: https://github.com/sharetripnet/ShareTripSDK.git
-    :tag: 1.0.1
 
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
@@ -991,6 +982,6 @@ SPEC CHECKSUMS:
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 083417c0a58e26ac00f55e7cadf8778a7d626365
+PODFILE CHECKSUM: 759ea9025a659d4fc23df0e37628fb4a7ba93311
 
 COCOAPODS: 1.11.3
