@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        STSDK.initiate("accessToken")
+        STSDK.shared.delegate = self
+        STSDK.shared.accessToken = "accessToken"
         
         window?.rootViewController =  UINavigationController(rootViewController: MyBLHomeVC.instantiate())
         
@@ -26,4 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         return true
     }
 
+}
+
+extension AppDelegate: STSDKDelegate {
+    func didSuccessTokenValidation() {
+        //Triggered after a successful token validation
+    }
+    
+    func didFailed(error: String) {
+        STLog.error("Token validation errror: \(error)")
+    }
 }
