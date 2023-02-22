@@ -31,10 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
 
 extension AppDelegate: STSDKDelegate {
     func didSuccessTokenValidation() {
-        //Triggered after a successful token validation
+        print("Token is valid")
     }
     
     func didFailed(error: String) {
-        STLog.error("Token validation errror: \(error)")
+        print("Token validation errror: \(error)")
     }
 }
