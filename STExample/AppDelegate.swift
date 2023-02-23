@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        STSDK.configure()
+        STSDK.shared.clientId = "MyBL"
         STSDK.shared.delegate = self
-        STSDK.shared.accessToken = "accessToken"
         
         window?.rootViewController =  UINavigationController(rootViewController: MyBLHomeVC.instantiate())
         
