@@ -4,7 +4,7 @@ target 'STExample' do
   
   use_frameworks!
   
-  pod 'ShareTripSDK', :git => 'https://github.com/sharetripnet/ShareTripSDK.git', :tag => '1.0.4'
+  pod 'ShareTripSDK', '1.0.7'
   
   pod 'JWT'
   pod 'PKHUD'
