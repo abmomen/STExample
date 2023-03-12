@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 import ShareTripSDK
 
 @main
@@ -17,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        STSDK.configure()
+        FirebaseApp.configure()
+        
         STSDK.shared.clientId = "MyBL"
         STSDK.shared.delegate = self
         STSDK.shared.accessToken = "$2b$10$wD1FIFQia1s7U7wP7.fzn.FHpFE/YOk5fWFL8r7PPkU.qZ3dsskNK"
