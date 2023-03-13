@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import ShareTripSDK
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
@@ -19,13 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
         
         STSDK.shared.clientId = "MyBL"
         STSDK.shared.delegate = self
-        STSDK.shared.accessToken = "$2b$10$wD1FIFQia1s7U7wP7.fzn.FHpFE/YOk5fWFL8r7PPkU.qZ3dsskNK"
-        
-        window?.rootViewController =  UINavigationController(rootViewController: MyBLHomeVC.instantiate())
-        
+        STSDK.shared.accessToken = "$2b$10$pv.ZAnzyuSTD7GIMm/yHL.hdPTFQgUDN2rfXPnQXh67e4JsKJ0Fl."
+        self.window?.rootViewController =  UINavigationController(rootViewController: MyBLHomeVC.instantiate())
         window?.makeKeyAndVisible()
         
         return true
