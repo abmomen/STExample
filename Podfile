@@ -1,7 +1,7 @@
 platform :ios, '11.0'
 
 target 'STExample' do
-    pod 'ShareTripSDK', '1.0.7'
+    pod 'ShareTripSDK', :path=> '../STSDK'
     
     pod 'JWT'
     pod 'PKHUD'
