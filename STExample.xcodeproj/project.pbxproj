@@ -100,6 +100,7 @@
 				CCC181D9298A4C050086426D /* Frameworks */,
 				CCC181DA298A4C050086426D /* Resources */,
 				80F910230C35977AE68B8DF1 /* [CP] Embed Pods Frameworks */,
+				4FECA56F1699867702F7AC2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +157,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4FECA56F1699867702F7AC2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STExample/Pods-STExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STExample/Pods-STExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STExample/Pods-STExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		769F7334B542ECE22E933C11 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

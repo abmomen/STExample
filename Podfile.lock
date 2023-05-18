@@ -604,6 +604,7 @@ PODS:
   - AppAuth/ExternalUserAgent (1.6.0):
     - AppAuth/Core
   - Base64 (1.1.2)
+  - BlueCryptor (2.0.1)
   - BlueECC (1.2.5)
   - BlueRSA (1.0.200)
   - Bolts-Swift (1.5.0)
@@ -888,6 +889,7 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - Base64
+    - BlueCryptor
     - BlueECC
     - BlueRSA
     - Bolts-Swift
@@ -954,6 +956,7 @@ SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
+  BlueCryptor: d2f95abbdfd91656e560850d887d47387a9bf2eb
   BlueECC: 0d18e93347d3ec6d41416de21c1ffa4d4cd3c2cc
   BlueRSA: dfeef51db96bcc4edec654956c1581adbda4e6a3
   Bolts-Swift: afbbaf8c8186e7f769be4afa656949c14087ba44
