@@ -1,7 +1,7 @@
 platform :ios, '11.0'
 
 target 'STExample' do
-    pod 'ShareTripSDK', '1.0.7'
+    pod 'ShareTripSDK', :git => 'https://github.com/sharetripnet/ShareTripSDK.git', :tag => '1.0.8'
     
     pod 'JWT'
     pod 'PKHUD'
@@ -10,7 +10,7 @@ target 'STExample' do
     pod 'BlueECC'
     pod 'BlueRSA'
     pod 'Alamofire'
-    pod 'lottie-ios', '3.3.0'
+    pod 'lottie-ios', '3.5.0'
     pod 'SwiftyJSON'
     pod 'Kingfisher', '~> 6.3.1'
     pod 'Bolts-Swift'

@@ -843,7 +843,7 @@ PODS:
   - PromisesObjC (2.2.0)
   - PromisesSwift (2.2.0):
     - PromisesObjC (= 2.2.0)
-  - ShareTripSDK (1.0.7)
+  - ShareTripSDK (1.0.8)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
   - Starscream (4.0.4)
@@ -877,7 +877,7 @@ DEPENDENCIES:
   - Koloda
   - lottie-ios (= 3.3.0)
   - PKHUD
-  - ShareTripSDK (= 1.0.7)
+  - ShareTripSDK (from `https://github.com/sharetripnet/ShareTripSDK.git`, tag `1.0.8`)
   - Socket.IO-Client-Swift
   - SwiftKeychainWrapper
   - SwiftyJSON
@@ -934,11 +934,20 @@ SPEC REPOS:
     - pop
     - PromisesObjC
     - PromisesSwift
-    - ShareTripSDK
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftKeychainWrapper
     - SwiftyJSON
+
+EXTERNAL SOURCES:
+  ShareTripSDK:
+    :git: https://github.com/sharetripnet/ShareTripSDK.git
+    :tag: 1.0.8
+
+CHECKOUT OPTIONS:
+  ShareTripSDK:
+    :git: https://github.com/sharetripnet/ShareTripSDK.git
+    :tag: 1.0.8
 
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
@@ -991,12 +1000,12 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   PromisesSwift: cf9eb58666a43bbe007302226e510b16c1e10959
-  ShareTripSDK: 78e61bef8f19e9b80596e5dc3ed6663c28b3283a
+  ShareTripSDK: e9188d38f8f8a710fd065fb584ab87d153b70a94
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: bbce44c4bc77be25a0499ae9a6a42d79007274c3
+PODFILE CHECKSUM: b43afe0463e28ef01d75b9372a47cc4253b13e53
 
 COCOAPODS: 1.12.0

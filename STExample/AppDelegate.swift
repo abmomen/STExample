@@ -22,10 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
         
-        STSDK.shared.clientId = "MyBL"
         STSDK.shared.delegate = self
         STSDK.shared.accessToken = "$2b$10$pv.ZAnzyuSTD7GIMm/yHL.hdPTFQgUDN2rfXPnQXh67e4JsKJ0Fl."
-        self.window?.rootViewController =  UINavigationController(rootViewController: MyBLHomeVC.instantiate())
+        self.window?.rootViewController =  UINavigationController(rootViewController: STSDKHomeVC.instantiate())
         window?.makeKeyAndVisible()
         
         return true
